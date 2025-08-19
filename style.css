@@ -46,3 +46,29 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* Only for attributiion */
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Styling */
+
+body {
+  padding: 1.5rem;
+}
+
+.dessert img {
+  border-radius: 0.5rem;
+}
+
+.dessert-button {
+  display: flex;
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid var(--red)
+}

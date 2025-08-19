@@ -3,20 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Product list with cart</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Desserts
+  <h1>Desserts</h1>
+  <div id="dessert-list">
+    <div class="dessert">
+      <div>
+        <img src="assets/images/image-waffle-mobile.jpg" alt="Waffle with Berries Image">
+        <button class="dessert-button">
+          <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart Icon">
+          Add to Cart
+        </button>
+      </div>
+      <span>Waffle</span>
+      <h2>Waffle with Berries</h2>
+      <p>$6.50</p>
+    </div>
+  </div>
 
   Waffle with Berries
   Waffle
@@ -68,7 +77,9 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/mksdesuyo" target="_blank">Rizqi Muhammad Khatami Sandi</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
