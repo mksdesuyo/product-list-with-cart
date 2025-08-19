@@ -1,5 +1,5 @@
 /* CSS Variables */
-:root{
+:root {
   --red: hsl(14, 86%, 42%);
   --green: hsl(159, 69%, 38%);
 
@@ -12,7 +12,9 @@
 }
 
 /* CSS Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 * {
@@ -27,48 +29,108 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 /* Only for attributiion */
 
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-/* Styling */
+/* Global Styling */
 
 body {
+  font-family: 'Red Hat Text', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   padding: 1.5rem;
 }
 
-.dessert img {
-  border-radius: 0.5rem;
-}
+/* Card Styling */
 
-.dessert-button {
+.dessert-list {
   display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  padding: 1rem 0;
+}
+.dessert-image {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.75rem;
+}
+.dessert-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.dessert-button {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem; /* lebih kecil */
+  /* font-size: 0.875rem; */
   background-color: white;
-  border-radius: 1rem;
-  border: 1px solid var(--red)
+  border: solid 1px var(--red);
+  border-radius: 9999px;
+  font-weight: 600;
+  color: var(--rose-700);
+}
+.dessert-button img {
+  width: auto;
+}
+.dessert-category {
+  color: var(--rose-500);
+}
+.dessert-name {
+  color: var(--rose-700);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.dessert-price {
+  color: var(--red);
+  font-weight: 600;
 }
