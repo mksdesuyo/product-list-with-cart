@@ -1,11 +1,11 @@
 fetch('data.json')
   .then((res) => res.json())
   .then((data) => {
-    const container = document.getElementById('dessert-list');
+    const container = document.getElementById('dessertList');
 
     data.forEach((item) => {
       const card = document.createElement('article');
-      card.className = 'dessert';
+      card.className = 'dessert-item';
 
       card.innerHTML = `
       <figure class="dessert-image">
@@ -15,7 +15,7 @@ fetch('data.json')
           <source srcset="${item.image.mobile}" media="(min-width: 320px)">
           <img src="${item.image.thumbnail}" alt="${item.name}">
         </picture>
-        <button class="dessert-button">
+        <button id="dessertButton" class="dessert-button">
           <img
             src="assets/images/icon-add-to-cart.svg"
             alt=""
@@ -33,3 +33,4 @@ fetch('data.json')
       container.appendChild(card);
     });
   });
+
