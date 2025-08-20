@@ -118,6 +118,7 @@ body {
   border-radius: 9999px;
   font-weight: 600;
   color: var(--rose-700);
+  cursor: pointer;
 }
 .dessert-button img {
   width: auto;
@@ -133,4 +134,21 @@ body {
 .dessert-price {
   color: var(--red);
   font-weight: 600;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal.hidden {
+  display: none;
+}
+.modal-content {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
 }
